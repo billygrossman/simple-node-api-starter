@@ -21,7 +21,7 @@ node-api-starter/
  |   ├──user.js                    * starter controller for all things user
  │
  ├──models/                        * models go in here
- |   ├──validation/				   			 * json validation goes in here
+ |   ├──validation/                * json validation goes in here
  |   │   │
  | 	 │   ├──user-register.json     * validation for user register
  |   │
