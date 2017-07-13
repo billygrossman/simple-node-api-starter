@@ -21,13 +21,13 @@ File Structure
 | **models**/User.js                         | Schema and model for user                                    |
 | **models**/Token.js                        | Schema and model user authentication tokens                  |
 | **routes**/                                |                                                              |
-| **routes/index.js**/                       | Autoloads all routes in directory                            |
-| **routes/user.js**/                        | Routes to all things user                                    |
+| **routes**/index.js/                       | Autoloads all routes in directory                            |
+| **routes**/user.js/                        | Routes to all things user                                    |
 | **test**/                                  |                                                              |
-| **test/app.js**/                           | Sample app test                                              |
+| **test**/app.js/                           | Sample app test                                              |
 | **utils**/                                 |                                                              |
-| **utils/logger.js**/                       | Utility for logging                                          |
-| **utils/middleware.js**/                   | All route middleware                                         |
+| **utils**/logger.js/                       | Utility for logging                                          |
+| **utils**/middleware.js/                   | All route middleware                                         |
 | .env.example                               | Your API keys, tokens, passwords and database URI.           |
 | app.js                                     | The main application file.                                   |
 | package.json                               | What npm uses to manage its dependencies                     |
