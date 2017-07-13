@@ -5,6 +5,51 @@ About
 -------
 Coming soon!
 
+File Structure
+-------
+Separation of concerns is priority.
+```
+node-api-starter/
+	├──config/                        * app configs go in here
+	|   ├──master.js                  * global/high level app configurations
+	│
+	├──controllers                    * controllers go in here
+	|   ├──index.js                   * file autoloads all controllers in directory
+	│   │
+	|   ├──api.js                     * starter controller for general api
+	│   │
+	|   ├──user.js                    * starter controller for all things user
+	│
+	├──models                         * models go in here
+	|   ├──index.js                   * file autoloads all models in directory
+	│   │
+	|   ├──Token.js                   * model for user authentication tokens
+	│   │
+	|   ├──User.js                    * model for user
+	│
+	├──routes                         * routes go in here
+	|   ├──index.js                   * file autoloads all routes in directory
+	│   │
+	|   ├──user.js                    * routes to access all things user
+	│
+	├──test                           * integration/unit tests go in here
+	|   ├──app.js                     * sample test
+	│   │
+	|   ├──user.js                    * routes to access all things user
+	│
+	├──utils                          * utility files go in here
+	|   ├──logger.js                  * utility for logging
+	│   │
+	|   ├──middleware.js              * utlity for middleware
+	│
+	├──.env.example                   * environmnet variables
+	├──.gitignore                     * what git uses to ignore files
+	├──app.js                         * main app.js
+	├──LICENSE                        * license
+	├──package.json                   * what npm uses to manage its dependencies
+	└──README.md                      * documentation
+```
+
 License
 -------
 
