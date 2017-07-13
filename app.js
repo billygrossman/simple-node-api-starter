@@ -45,6 +45,12 @@ app.chalk = require('chalk');
  */
 app.middleware = require('./utils/middleware')(app);
 
+
+/**
+ * Schema validation
+ */
+app.validator = require('./utils/validator')(app);
+
 /**
  * Connect to MongoDB.
  */
