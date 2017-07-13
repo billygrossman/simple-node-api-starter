@@ -126,6 +126,24 @@ module.exports = function(app) {
 
   };
 
+  schema.methods.find = function(callback) {
+
+    app.log.info('Model %s ' + app.chalk.blue('→') + ' find', modelName);
+
+    app.models.user.schema.findById(this._id, { password:0 }, (err, result) => {
+
+      if(err) {
+        callback({code: 500, message: err.toString()});
+      } else if(!result) {
+        callback({code: 404, message: 'unable to find user'});
+      } else {
+        callback(null, result);
+      }
+
+    });
+
+  };
+
   historySchema.methods.addHistory = function(userId, callback){
 
     app.log.info('Model %s ' + app.chalk.blue('→') + ' addHistory', modelName);
